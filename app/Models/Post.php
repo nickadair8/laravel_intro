@@ -11,8 +11,14 @@ class Post extends Model
 
     protected $guarded = ['id']; //guards ID from being mass assigned
 
+    protected $with = ['category', 'author'];
+
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function author(){
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
