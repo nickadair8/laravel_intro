@@ -10,4 +10,9 @@ class Post extends Model
     use HasFactory;
 
     protected $guarded = ['id']; //guards ID from being mass assigned
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
