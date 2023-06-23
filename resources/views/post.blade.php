@@ -52,6 +52,23 @@
                         {!!$post->body!!}
                      </div>
                  </div>
+
+                 <section class="col-span-8 cold-start-5 mt-10">
+                    <article class="flex">
+                        <div class="">
+                            <img src="https://i.pravatar.cc/100" alt="">
+                        </div>
+
+                        <div class="">
+                            <header>
+                                <h3 class="font-bold">John Doe</h3>
+                                <p>Posted <time>8 Months Ago</time></p>
+                            </header>
+
+                            <p>WE LOVE COMMENTS AND PHP</p>
+                        </div>
+                    </article>
+                 </section>
              </article>
          </main>
 
